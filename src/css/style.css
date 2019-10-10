@@ -1,0 +1,88 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #323a40;
+    min-height: 100vh;
+}
+.workspace {
+    border-radius: 10px;
+    color:white;
+    padding: 10px;
+    background-color: rgba(20,20,20,0.5);
+}
+.header-icon {
+    width: 30px;
+    margin:0 2px;
+}
+.collapse-label {
+    cursor: pointer;
+    text-align: left;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.toggle-main-label {
+    cursor: pointer;
+    text-align: left;
+    transition: 0.4s;
+}
+.toggle-main-label:after {
+    content: ' Rozwiń/Zwiń';
+    font-size: 0.6em;
+    transition: 0.4s;
+    opacity: 0;
+}
+.toggle-main-label:hover:after {
+    opacity: 1;
+}
+.collapse-label:hover,.toggle-main-label:hover {
+    opacity: 0.6;
+}
+.collapse-label + div {
+    overflow: hidden;
+    max-height: 100px;
+    transition: 0.4s;
+}
+.toggle-main-label + div {
+    overflow: hidden;
+    max-height: 1000px;
+    transition: 0.8s;
+}
+.collapse-toggled {
+    max-height: 0px !important;
+}
+hr{
+    color:white;
+    background-color: white;
+    border-color: white;
+    margin:0;
+}
+p {
+    margin:2px 0;
+}
+.main-editor {
+    border-radius: 5px;
+    overflow: auto;
+    height: 600px;
+    border:0;
+    resize: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: flex-start;
+    color:white;
+}
+.editor-textfield {
+    background-color: rgb(53, 53, 53);
+    outline: none;
+    min-height: 100%;
+    padding: 5px;
+    width: calc(100% - 35px);
+}
+.row-counter {
+    width: 35px;
+    text-align: right;
+    padding: 4px;
+    min-height: 100%;
+    color:#ddd;
+}
