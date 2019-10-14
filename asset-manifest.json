@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "//maciejbart99.github.ioo/pseudo-interpreter/static/css/main.ed5d09ca.chunk.css",
+    "main.js": "//maciejbart99.github.ioo/pseudo-interpreter/static/js/main.735c42d5.chunk.js",
+    "main.js.map": "//maciejbart99.github.ioo/pseudo-interpreter/static/js/main.735c42d5.chunk.js.map",
+    "runtime-main.js": "//maciejbart99.github.ioo/pseudo-interpreter/static/js/runtime-main.7d7a80e1.js",
+    "runtime-main.js.map": "//maciejbart99.github.ioo/pseudo-interpreter/static/js/runtime-main.7d7a80e1.js.map",
+    "static/js/2.cd4ead67.chunk.js": "//maciejbart99.github.ioo/pseudo-interpreter/static/js/2.cd4ead67.chunk.js",
+    "static/js/2.cd4ead67.chunk.js.map": "//maciejbart99.github.ioo/pseudo-interpreter/static/js/2.cd4ead67.chunk.js.map",
+    "index.html": "//maciejbart99.github.ioo/pseudo-interpreter/index.html",
+    "precache-manifest.9ee4c9a454bb4ead94a5eeafeaeefb1e.js": "//maciejbart99.github.ioo/pseudo-interpreter/precache-manifest.9ee4c9a454bb4ead94a5eeafeaeefb1e.js",
+    "service-worker.js": "//maciejbart99.github.ioo/pseudo-interpreter/service-worker.js",
+    "static/css/main.ed5d09ca.chunk.css.map": "//maciejbart99.github.ioo/pseudo-interpreter/static/css/main.ed5d09ca.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d7a80e1.js",
+    "static/js/2.cd4ead67.chunk.js",
+    "static/css/main.ed5d09ca.chunk.css",
+    "static/js/main.735c42d5.chunk.js"
+  ]
+}
