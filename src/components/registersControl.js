@@ -5,7 +5,7 @@ import { memoryUpdated,registersUpdated } from "../actions";
 
 function RegistersControlPrimitive(props) {
 
-    let registers=props.registers.map(el=><StorageElement storageType='Rejestr' storage={el}/>);
+    let registers=props.registers.map(el=><StorageElement key={el.adress} storageType='Rejestr' storage={el}/>);
 
     const [toggled, setToggled] = useState('collapse-toggled');
 

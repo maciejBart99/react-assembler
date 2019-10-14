@@ -34,7 +34,10 @@ class WorkAreaPrimitive extends Component {
                 break;
             case 'NEXT':
                 break;
-            case 'RESET':
+            case 'RESET': this.interpreter.clearConfiguration();
+                        this.props.registersUpdated(Register.registers);
+                        this.props.memoryUpdated(Cell.cells);
+                        this.props.stateRegisterUpdated(this.interpreter.stateRegister);
                 break;
         }
     }
@@ -44,7 +47,7 @@ class WorkAreaPrimitive extends Component {
             <div className='container'>
                 <div className='row'>
                     <div className="col-12 col-md-5 col-lg-4 p-2">
-                        <div class='workspace'>
+                        <div className='workspace'>
                             <RuntimeControl execute={this.executeControl}/>
                             <MemoryControl/>
                             <StateRegister/>
@@ -52,7 +55,7 @@ class WorkAreaPrimitive extends Component {
                         </div>
                     </div>
                     <div className="col-12 col-md-7 col-lg-8 p-2">
-                        <div class='workspace'>
+                        <div className='workspace'>
                             <Editor/>
                         </div>
                     </div>

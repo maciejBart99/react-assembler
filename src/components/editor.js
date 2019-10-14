@@ -1,12 +1,7 @@
 import React,{Component} from 'react';
-import RuntimeControl from './runtimeControl';
-import Register from '../core/register';
-import Interpreter from '../core/interpreter';
-import Cell from '../core/cell';
 import { connect } from "react-redux";
-import {MemoryControl} from './memoryControl';
-import {RegistersControl} from './registersControl';
 import { memoryUpdated,registersUpdated,scriptUpdated } from "../actions";
+import ContentEditable from 'react-contenteditable';
 
 class EditorPrimitive extends Component {
 
@@ -14,11 +9,13 @@ class EditorPrimitive extends Component {
         super(props);
         this.editor = React.createRef()
         this.handleChange = this.handleChange.bind(this);
+        this.state = {html: "Wpisz swój kod..."};
       }
 
     handleChange(event) {
+        console.log(this.extractContent(event.target.value));
         this.props.scriptUpdated(this.extractContent(event.target.innerHTML));
-        this.setState({ state: this.state });
+        this.setState({html: event.target.value});
     }
 
     extractContent(s) {
@@ -35,15 +32,13 @@ class EditorPrimitive extends Component {
         let height=(this.editor.current)?this.editor.current.offsetHeight:600;
 
         for(let i=1;i<(height*(25/600));i++) {
-            lines.push(<span>{i}<br/></span>);
+            lines.push(<span key={i}>{i}<br/></span>);
         }
 
         return <div className='p-2'>
             <div className='main-editor'>
                 <div className='row-counter'>{lines}</div>
-                <div ref={this.editor} contentEditable='true' onKeyDown={this.handleChange} className='editor-textfield'>
-                    <div>Tutaj wpisz swój kod...</div>
-                </div>
+                <ContentEditable innerRef={this.editor} html={this.state.html} disabled={false} onChange={this.handleChange} className='editor-textfield'/>
             </div>
         </div>;
     }

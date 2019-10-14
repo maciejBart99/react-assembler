@@ -6,7 +6,7 @@ import { memoryUpdated,registersUpdated } from "../actions";
 function MemoryControlPrimitive(props) {
     console.log(props.memory);
 
-    let cells=props.memory.map(el=><StorageElement storageType='Komórka' storage={el}/>);
+    let cells=props.memory.map(el=><StorageElement key={el.adress} storageType='Komórka' storage={el}/>);
 
     if(cells.length==0)
         cells=<p className='text-muted'>Brak komórek do wyświetlenia</p>;
