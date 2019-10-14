@@ -2,9 +2,11 @@
   "name": "pseudo-interpreter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maciejbart99.github.io/react-assembler",
   "dependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
     "react": "^16.10.2",
     "react-contenteditable": "^3.3.2",
@@ -18,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

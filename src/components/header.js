@@ -8,9 +8,9 @@ function Header() {
             <h6 className='text-white font-weight-light'>by Maciej Łukasik</h6>
         </div>
         <div className='d-flex align-items-center'>
-            <img className='header-icon spin' src='/img/logo192.png'/>
+            <img className='header-icon spin' src='https://cdn.worldvectorlogo.com/logos/react.svg'/>
             <h6 className='text-white font-weight-light mx-2 my-0'>React</h6>
-            <img className='header-icon spin' src='/img/redux.png'/>
+            <img className='header-icon spin' src='https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png'/>
             <h6 className='text-white font-weight-light mx-2 my-0'>Redux</h6>
         </div>
     </div>
