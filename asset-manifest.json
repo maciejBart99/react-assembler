@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-assembler/static/css/main.ed5d09ca.chunk.css",
-    "main.js": "/react-assembler/static/js/main.3f639573.chunk.js",
-    "main.js.map": "/react-assembler/static/js/main.3f639573.chunk.js.map",
+    "main.js": "/react-assembler/static/js/main.ff6842cc.chunk.js",
+    "main.js.map": "/react-assembler/static/js/main.ff6842cc.chunk.js.map",
     "runtime-main.js": "/react-assembler/static/js/runtime-main.3d65d2e3.js",
     "runtime-main.js.map": "/react-assembler/static/js/runtime-main.3d65d2e3.js.map",
     "static/js/2.cd4ead67.chunk.js": "/react-assembler/static/js/2.cd4ead67.chunk.js",
     "static/js/2.cd4ead67.chunk.js.map": "/react-assembler/static/js/2.cd4ead67.chunk.js.map",
     "index.html": "/react-assembler/index.html",
-    "precache-manifest.19230008a5a4c38815aeb745f2c49d9b.js": "/react-assembler/precache-manifest.19230008a5a4c38815aeb745f2c49d9b.js",
+    "precache-manifest.99606b81e6470ed4ce61fe618b8222fd.js": "/react-assembler/precache-manifest.99606b81e6470ed4ce61fe618b8222fd.js",
     "service-worker.js": "/react-assembler/service-worker.js",
     "static/css/main.ed5d09ca.chunk.css.map": "/react-assembler/static/css/main.ed5d09ca.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.3d65d2e3.js",
     "static/js/2.cd4ead67.chunk.js",
     "static/css/main.ed5d09ca.chunk.css",
-    "static/js/main.3f639573.chunk.js"
+    "static/js/main.ff6842cc.chunk.js"
   ]
 }

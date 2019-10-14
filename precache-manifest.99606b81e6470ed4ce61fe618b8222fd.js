@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bbea3a6f8f9bb9e8f5a91d49c99d75a5",
+    "revision": "aa34dd0eb39da5ea495819feb52a6c14",
     "url": "/react-assembler/index.html"
   },
   {
-    "revision": "e2fbeebec2c61633406f",
+    "revision": "c2b05f5071cabff569f8",
     "url": "/react-assembler/static/css/main.ed5d09ca.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-assembler/static/js/2.cd4ead67.chunk.js"
   },
   {
-    "revision": "e2fbeebec2c61633406f",
-    "url": "/react-assembler/static/js/main.3f639573.chunk.js"
+    "revision": "c2b05f5071cabff569f8",
+    "url": "/react-assembler/static/js/main.ff6842cc.chunk.js"
   },
   {
     "revision": "570450ee02f7473cfef1",
