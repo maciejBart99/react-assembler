@@ -13,7 +13,6 @@ class EditorPrimitive extends Component {
       }
 
     handleChange(event) {
-        console.log(this.extractContent(event.target.value));
         this.props.scriptUpdated(this.extractContent(event.target.innerHTML));
         this.setState({html: event.target.value});
     }
@@ -27,13 +26,8 @@ class EditorPrimitive extends Component {
           
 
     render() {
-        let lines=[];
-
-        let height=(this.editor.current)?this.editor.current.offsetHeight:600;
-
-        for(let i=1;i<(height*(25/600));i++) {
-            lines.push(<span key={i}>{i}<br/></span>);
-        }
+        const height=(this.editor.current)?this.editor.current.offsetHeight:600;
+        const lines = Array.from(new Array(height*(25/600)).keys()).map(i => <span key={i}>{i}<br/></span>);
 
         return <div className='p-2'>
             <div className='main-editor'>

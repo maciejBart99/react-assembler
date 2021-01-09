@@ -4,13 +4,7 @@ import { connect } from "react-redux";
 import { memoryUpdated,registersUpdated } from "../actions";
 
 function MemoryControlPrimitive(props) {
-    console.log(props.memory);
-
-    let cells=props.memory.map(el=><StorageElement key={el.adress} storageType='Komórka' storage={el}/>);
-
-    if(cells.length==0)
-        cells=<p className='text-muted'>Brak komórek do wyświetlenia</p>;
-
+    const cells=props.memory.length == 0 ? <p className='text-muted'>Brak komórek do wyświetlenia</p> : props.memory.map(el=><StorageElement key={el.address} storageType='Komórka' storage={el}/>);
     const [toggled, setToggled] = useState('collapse-toggled');
 
     return <div className='my-2'>

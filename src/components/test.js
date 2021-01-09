@@ -1,15 +1,11 @@
 import React from 'react';
-import Register from '../core/register';
-import Cell from '../core/cell';
 import Interpreter from '../core/interpreter';
-import Order from '../core/order';
 
 class Test extends React.Component {
     
     constructor(props) {
         super(props);
         this.state = {cmd: ''};
-    
         this.handleChange = this.handleChange.bind(this);
         this.handleClick = this.handleClick.bind(this);
     }
@@ -19,16 +15,9 @@ class Test extends React.Component {
     }
 
     handleClick() {
-
-       
-          let interpreter=new Interpreter(data=>console.log(data));
+          const interpreter=new Interpreter(data=>console.log(data));
           interpreter.loadScript(this.state.value);
           interpreter.execute();
-            
-          console.log(interpreter);
-          console.log(Register.registers);
-          console.log(Cell.cells);
-    
       }
     
     render() {

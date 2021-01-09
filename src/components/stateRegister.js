@@ -1,13 +1,8 @@
 import React,{useState} from 'react';
-import StorageElement from './storageElement';
 import { connect } from "react-redux";
 import { stateRegisterUpdated } from "../actions";
-import { identifier } from '@babel/types';
 
 function StateRegisterPrimitive(props) {
-
-    console.log(props);
-
     let symbol='Z';
     if(props.stateRegister.value==1) {
         symbol='P';

@@ -1,7 +1,7 @@
 export default class Storage {
 
-    constructor(adress,value,size) {
-        this.adress=adress;
+    constructor(address,value,size) {
+        this.address=address;
         this.value=value;
         this.size=size;
     }

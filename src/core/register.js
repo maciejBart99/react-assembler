@@ -2,18 +2,18 @@ import Storage from './storage';
 
 export default class Register extends Storage {
 
-    constructor(adress,value,size) {
-        super(adress,value,size);
+    constructor(address,value,size) {
+        super(address,value,size);
     }
 
     static registers=[];
 
-    static findRegisterByAdress(adress) {
+    static findRegisterByAddress(address) {
 
         let result=null;
 
         Register.registers.forEach(element => {
-            if(element.adress==adress)
+            if(element.address==address)
                 result=element;
         });
 
